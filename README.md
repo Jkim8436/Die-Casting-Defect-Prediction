@@ -307,18 +307,6 @@ decision_logic("충전불량", sample_idx=0, top_n=5)
 
 ---
 
-## 👥 Team
-
-| Name | Role |
-|---|---|
-| 김동욱 | EDA, Preprocessing |
-| 김동현 | Model Training, Evaluation |
-| 배진욱 | SHAP Analysis, Decision Logic |
-| 유호빈 | Business Impact, Dashboard |
-| 최민정 | EDA, Preprocessing, Presentation |
-
----
-
 <div align="center">
 
 **Team 일오나!! — 불량은 한 번에 잡는다 🔧**
