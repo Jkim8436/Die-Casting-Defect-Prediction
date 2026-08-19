@@ -195,50 +195,23 @@ SHAP interpretation (global/local plots, root-cause attribution) was built by te
 ```
 Real-Time-Defect-Prediction-for-Die-Casting-Manufacturing/
 │
-├── 다이캐스팅_불량예측.ipynb        # Main notebook
-├── DieCasting_Quality_Raw_Data.csv # Dataset
-├── README.md
-│
-└── sections/
-    ├── 0_setup.py        # Libraries & font config
-    ├── 1_load.py         # Data loading
-    ├── 2_eda.py          # EDA (histogram / heatmap / t-test)
-    ├── 3_preprocess.py   # Preprocessing & SMOTE
-    ├── 4_modeling.py     # RF / XGB / LGBM training
-    ├── 5_shap.py         # SHAP interpretation
-    ├── 6_decision.py     # Decision Logic report
-    └── 7_business.py     # Business Impact calculation
+├── 다이캐스팅_불량예측.ipynb        # Main notebook — full pipeline, sections 0–7 as cells
+├── DieCasting_Quality_Raw_Data.csv # Dataset (included, no separate download needed)
+├── 다이캐스팅 프로젝트.pdf          # Presentation deck
+└── README.md
 ```
 
 ---
 
 ## Installation
 
+The dataset (`DieCasting_Quality_Raw_Data.csv`) is included in this repo — no separate download needed.
+
 ```bash
 git clone https://github.com/Jkim8436/Real-Time-Defect-Prediction-for-Die-Casting-Manufacturing.git
 cd Real-Time-Defect-Prediction-for-Die-Casting-Manufacturing
 
-python -m venv venv
-source venv/bin/activate      # macOS/Linux
-venv\Scripts\activate         # Windows
-
-pip install -r requirements.txt
-```
-
-### `requirements.txt`
-
-```
-pandas>=1.5.0
-numpy>=1.23.0
-matplotlib>=3.6.0
-seaborn>=0.12.0
-scikit-learn>=1.2.0
-imbalanced-learn>=0.10.0
-xgboost>=1.7.0
-lightgbm>=3.3.0
-shap>=0.41.0
-scipy>=1.10.0
-jupyter>=1.0.0
+pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn xgboost lightgbm shap scipy jupyter
 ```
 
 ---
